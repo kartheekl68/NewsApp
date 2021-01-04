@@ -1,0 +1,83 @@
+@import '../../../global.scss';
+
+.top-news {
+    width: 100%;
+    height: 500px;
+    @include flex-alignment(center, center, row);
+}
+.top-news--left {
+    height: 100%;
+    width: 65%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include flex-alignment(center, flex-end);
+    cursor: pointer;
+}
+.left-news-info {
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(180deg, rgba(96, 96, 96, 0.39) 0%, rgba(96, 96, 96, 0.85) 100%);
+    box-sizing: border-box;
+    padding: 10px 15px;
+    text-align: left;
+    @include flex-alignment(center, flex-start, column);
+}
+.blog-title {
+    color: $color--white;
+    text-align: left;
+}
+.top-news--right {
+    height: 100%;
+    width: 35%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $color--e5-grey;
+}
+
+.right-news-info {
+    position: relative;
+    @include flex-alignment(center, center, row);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.right-news-info::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+    background-color: $color--e5-grey;
+}
+.image-cont {
+    min-width: 120px;
+    min-height: 120px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.news-cont {
+    height: 100%;
+    width: auto;
+    @include flex-alignment(space-between, flex-start, column);
+    padding: 10px;
+    text-align: left;
+
+    p {
+        margin: 0;
+    }
+}
+
+@include mobile {
+    .top-news {
+        height: 660px;
+        @include flex-alignment(center, center, column);
+        font-size: 0.8em;
+    }
+    .top-news--left, .top-news--right {
+        width: 100%;
+    }
+    .left-news-info {
+        height: 80%;
+    }
+}

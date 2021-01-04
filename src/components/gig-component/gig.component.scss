@@ -1,0 +1,54 @@
+@import '../../global.scss';
+
+.trend-art {
+    width: 250px;
+    height: 350px;
+    border: 1px solid $color--e5-grey;
+    border-radius: 5px;
+}
+.image-hold {
+    width: 100%;
+    height: 45%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.cont-hold {
+    height: 55%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: left;
+    @include flex-alignment(space-between, flex-start, column);
+}
+
+.cont-hold .title, .description {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title {
+    height: 25%;
+    margin: 0;
+    -webkit-line-clamp: 2;
+    color: $color--black;
+}
+.description {
+    height: 55%;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    -webkit-line-clamp: 5;
+}
+.tag-holder {
+    min-height: 10%;
+}
+
+@include mobile {
+    .trend-art {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../global.scss';
+
+.footer-container {
+    background-color: $color--light-grey;
+    color: $color--white;
+}
+
+.footer-cont {
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    @include flex-alignment(space-between, center, column);
+}
+.mrgn-auto {
+    margin: 0 auto;
+	max-width: 75%;
+}
+.footer-content {
+    width: 100%;
+    border-bottom: 3px solid $color--white;
+    padding-bottom: 30px;
+    @include flex-alignment(space-between, flex-start, row);
+}
+.footer-aboutme {
+    width: 250px;
+    text-align: left;
+
+}
+h3 {
+    display: inline-block;
+    border-bottom: 3px solid $color--white;
+}
+.footer-categories {
+    text-align: left;
+}
+.footer-categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-categories li {
+    margin: 10px 0; 
+    cursor: pointer;
+}
+
+.footer-categories li a {
+    text-decoration: none;
+    color: $color--white;
+}
+.footer-follow {
+    width: 100%;
+    height: 100px;
+    @include flex-alignment(space-around, center, row);
+}
+.footer-follow img {
+    width: 60px;
+}
+
+@include mobile {
+    .footer-content {
+        @include flex-alignment(center, center, column);
+    }
+    .footer-categories {
+        width: 100%;
+    }
+    .footer-follow {
+        margin-top: 20px;
+    }
+    .footer-follow img {
+        width: 40px;
+    }
+    
+}

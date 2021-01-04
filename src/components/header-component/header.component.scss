@@ -1,0 +1,93 @@
+
+@import '../../global.scss';
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    min-height: 70px;
+    box-shadow: 0 5px 5px rgba($color: $color--black, $alpha: 0.25);
+    @include flex-alignment(center, center, row);
+    z-index: 1;
+    background-color: $color--white;
+}
+.header-content {
+    flex: 1;
+    height: 100%;
+    @include flex-alignment(center, center);
+}
+.logo {
+    flex: 1;
+    padding: 5px;
+    @include flex-alignment(flex-start, center);
+    img {
+        cursor: pointer;
+    }
+}
+.logo-img {
+    height: 40px;
+}
+.open-menu {
+    display: none;
+    height: 30px;
+}
+.links {
+    flex: 1;
+    display: block;
+    @include flex-alignment(flex-end, center);
+}
+.links-ul {
+    list-style-type: none;
+    @include flex-alignment(center, center);
+    margin: 0;
+    padding: 0;
+}
+.links-ul a {
+    text-decoration: none;
+    color: $color--light-grey;
+}
+.links--li {
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    @include flex-alignment(center, center);
+    margin: 0 20px;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.links--li:hover {
+    background-color: $color--blue;
+    color: $color--white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+// Media queries.
+@include mobile {
+    .header {
+        min-height: 45px;
+    }
+    .header-content {
+        @include flex-alignment(center, center, column);
+    }
+    .links--li {
+        margin: 0 5px;
+    }
+    .logo {
+        width: 100%;
+        @include flex-alignment(space-between, center);
+    }
+    .open-menu {
+        display: block;
+    }
+    .links {
+        display: none;
+    }
+    .links-ul {
+        @include flex-alignment(center, center, column);
+    }
+}
+
+

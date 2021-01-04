@@ -1,0 +1,18 @@
+@import '../../../global.scss';
+
+.editor-pick {
+    margin-top: 50px;
+    width: 100%;
+}
+.art-grid {
+    margin-top: 40px;
+    @include flex-alignment(center, center, row);
+    flex-wrap: wrap;
+}
+.art-grid--element {
+    width: 250px;
+    height: 350px;
+    padding: 10px;
+}
+
+

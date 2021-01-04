@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/NewsApp/static/css/main.5a8441c2.chunk.css",
+    "main.js": "/NewsApp/static/js/main.8b0e4647.chunk.js",
+    "main.js.map": "/NewsApp/static/js/main.8b0e4647.chunk.js.map",
+    "runtime-main.js": "/NewsApp/static/js/runtime-main.b5cbe6a3.js",
+    "runtime-main.js.map": "/NewsApp/static/js/runtime-main.b5cbe6a3.js.map",
+    "static/js/2.5e10f134.chunk.js": "/NewsApp/static/js/2.5e10f134.chunk.js",
+    "static/js/2.5e10f134.chunk.js.map": "/NewsApp/static/js/2.5e10f134.chunk.js.map",
+    "index.html": "/NewsApp/index.html",
+    "precache-manifest.4c9c6a0cd32fb851b1425ade7db730ff.js": "/NewsApp/precache-manifest.4c9c6a0cd32fb851b1425ade7db730ff.js",
+    "service-worker.js": "/NewsApp/service-worker.js",
+    "static/css/main.5a8441c2.chunk.css.map": "/NewsApp/static/css/main.5a8441c2.chunk.css.map",
+    "static/js/2.5e10f134.chunk.js.LICENSE.txt": "/NewsApp/static/js/2.5e10f134.chunk.js.LICENSE.txt",
+    "static/media/home-categories.component.scss": "/NewsApp/static/media/technology.e1c45130.jpg",
+    "static/media/github.svg": "/NewsApp/static/media/github.3e746068.svg",
+    "static/media/instgram.svg": "/NewsApp/static/media/instgram.baaaeb85.svg",
+    "static/media/logo-name.svg": "/NewsApp/static/media/logo-name.ca4020c1.svg",
+    "static/media/open-menu.svg": "/NewsApp/static/media/open-menu.7d5e821d.svg",
+    "static/media/search.svg": "/NewsApp/static/media/search.b3b37b99.svg",
+    "static/media/twitter.svg": "/NewsApp/static/media/twitter.b4fae7c8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5cbe6a3.js",
+    "static/js/2.5e10f134.chunk.js",
+    "static/css/main.5a8441c2.chunk.css",
+    "static/js/main.8b0e4647.chunk.js"
+  ]
+}
